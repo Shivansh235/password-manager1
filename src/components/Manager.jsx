@@ -21,10 +21,10 @@ const Manager = () => {
   const showPassword = () => {
     passwordref.current.type = "text";
     if (ref.current.src.includes("Eye.svg")) {
-      ref.current.src = "./public/Crosseye.svg";
+      ref.current.src = "./Crosseye.svg";
       passwordref.current.type = "text";
     } else {
-      ref.current.src = "./public/Eye.svg";
+      ref.current.src = "./Eye.svg";
       passwordref.current.type = "password";
     }
   };
@@ -171,7 +171,7 @@ const Manager = () => {
           className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"
           onClick={showPassword}
         >
-          <img ref={ref} width={22} src="/Eye.svg" alt="Eye" />
+          <img ref={ref} width={22} src="/Eye.svg" alt="" />
         </span>
       </div>
     </div>
