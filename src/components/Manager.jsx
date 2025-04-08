@@ -238,7 +238,8 @@ const Manager = () => {
 
                 <td className="border border-white text-center px-3 py-2">
                   <div className="flex justify-center items-center">
-                    <span>{"*".repeat(item.password.length)}</span>
+                  <span>{'*'.repeat(item.password.length)}</span>
+
                     <img
                       onClick={() => copyText(item.password)}
                       className="invert hover:bg-green-950 cursor-pointer mx-2 w-5"
